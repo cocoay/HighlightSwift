@@ -1,0 +1,72 @@
+/// A bundled pair of light and dark highlight.js color themes.
+public enum HighlightTheme: String, CaseIterable, Identifiable, Equatable, Sendable {
+    case a11y
+    case atomOne = "Atom One"
+    case classic = "Classic"
+    case edge = "Edge"
+    case github = "GitHub"
+    case google = "Google"
+    case gradient = "Gradient"
+    case grayscale = "Grayscale"
+    case harmonic16 = "Harmonic16"
+    case heetch = "Heetch"
+    case horizon = "Horizon"
+    case humanoid = "Humanoid"
+    case ia = "iA"
+    case isblEditor = "ISBL Editor"
+    case kimbie = "Kimbie"
+    case nnfx = "NNFX"
+    case pandaSyntax = "Panda Syntax"
+    case papercolor = "Papercolor"
+    case paraiso = "Paraiso"
+    case qtcreator = "QT Creator"
+    case silk = "Silk"
+    case solarFlare = "Solar Flare"
+    case solarized = "Solarized"
+    case stackoverflow = "StackOverflow"
+    case standard = "Standard"
+    case summerfruit = "Summerfruit"
+    case synthMidnightTerminal = "Synth Midnight Terminal"
+    case tokyoNight = "Tokyo Night"
+    case unikitty = "Unikitty"
+    case xcode = "Xcode"
+
+    public var id: String {
+        rawValue
+    }
+
+    var resourceBaseName: String {
+        switch self {
+        case .a11y: "a11y"
+        case .atomOne: "atom-one"
+        case .classic: "classic"
+        case .edge: "edge"
+        case .github: "github"
+        case .google: "google"
+        case .gradient: "gradient"
+        case .grayscale: "grayscale"
+        case .harmonic16: "harmonic16"
+        case .heetch: "heetch"
+        case .horizon: "horizon"
+        case .humanoid: "humanoid"
+        case .ia: "ia"
+        case .isblEditor: "isbl-editor"
+        case .kimbie: "kimbie"
+        case .nnfx: "nnfx"
+        case .pandaSyntax: "panda-syntax"
+        case .papercolor: "papercolor"
+        case .paraiso: "paraiso"
+        case .qtcreator: "qtcreator"
+        case .silk: "silk"
+        case .solarFlare: "solar-flare"
+        case .solarized: "solarized"
+        case .stackoverflow: "stackoverflow"
+        case .standard: "standard"
+        case .summerfruit: "summerfruit"
+        case .synthMidnightTerminal: "synth-midnight-terminal"
+        case .tokyoNight: "tokyo-night"
+        case .unikitty: "unikitty"
+        case .xcode: "xcode"
+        }
+    }
+}

@@ -1,0 +1,97 @@
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+xcuserdata/
+**/xcuserdata/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# SwiftLint local cache (used by Scripts/lint.sh)
+.swiftlint-cache/
+# Track top-level package lock files so direct package builds use reviewed dependency revisions.
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+fastlane/README.md
+
+# fastlane - 敏感配置文件
+fastlane/Appfile
+fastlane/Matchfile
+fastlane/*.p8
+fastlane/*.mobileprovision
+fastlane/*.cer
+fastlane/*.p12
+fastlane/*.certSigningRequest
+
+# 环境变量和敏感信息
+.env
+.env.*
+*.secret
+*.personal.xcconfig
+*.local.xcconfig
+
+# 构建脚本敏感配置
+scripts/config.sh
+scripts/release/config.sh
+scripts/release/screenshots/
+Scripts/config.sh
+Scripts/release/config.sh
+Scripts/release/screenshots/
+
+# App Store Connect API Key
+AuthKey_*.p8
+*.p8
+
+# 证书和配置文件
+*.mobileprovision
+*.cer
+*.p12
+*.certSigningRequest
+
+# 构建产物
+*.ipa
+*.xcarchive
+*.dSYM
+*.dSYM.zip
+
+# Firebase (如果使用)
+#GoogleService-Info.plist
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Local RTL visual QA screenshots
+.rtl-qa/
+
+# Documents
+*.xls
+*.xlsx
+*.xlsm
+*.xlsb
+~$*.xls*
+
+# IDEs
+.idea/
+.vscode/
+.cursor/
+*.iml
+.venv
+.claude/
+.codegraph/
+.understand-anything/
+Docs/.obsidian/
+.zcode/

@@ -1,0 +1,2 @@
+highlight.js 11.12.0
+git fc3f06392f189354eed922973635ab9e9268b983
